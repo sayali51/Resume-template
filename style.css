@@ -1,0 +1,234 @@
+/* ─── Tokens ──────────────────────────────────────────── */
+:root {
+    --ink:      #111111;
+    --mid:      #555555;
+    --muted:    #999999;
+    --line:     #e8e8e8;
+    --surface:  #ffffff;
+    --bg:       #eeeae4;
+    --accent:   #111111;
+    --radius:   14px;
+}
+
+/* ─── Base ────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+    font-family: 'DM Sans', 'Segoe UI', system-ui, sans-serif;
+    background-color: var(--bg);
+    color: var(--ink);
+    margin: 0;
+    padding: 0;
+    font-size: 0.97rem;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ─── Header ──────────────────────────────────────────── */
+.header-area {
+    background: var(--surface);
+    border-bottom: 1px solid var(--line);
+    padding: 4rem 0 3rem;
+    text-align: center;
+}
+
+.header-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.75rem;
+}
+
+.main-title {
+    font-family: 'DM Serif Display', Georgia, serif;
+    font-size: clamp(2.4rem, 6vw, 3.6rem);
+    font-weight: 400;
+    color: var(--ink);
+    letter-spacing: -0.02em;
+    margin: 0 0 0.5rem;
+    line-height: 1.1;
+}
+
+.tagline {
+    color: var(--muted);
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    margin: 0;
+}
+
+/* ─── Navbar ──────────────────────────────────────────── */
+.navbar {
+    background: rgba(255,255,255,0.92) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line);
+    padding: 0.6rem 0;
+}
+
+.navbar-brand {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--ink) !important;
+    letter-spacing: 0.04em;
+}
+
+.nav-link {
+    color: var(--mid) !important;
+    font-size: 0.82rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-left: 1.5rem;
+    padding: 0.25rem 0 !important;
+    border-bottom: 1.5px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.nav-link:hover {
+    color: var(--ink) !important;
+    border-bottom-color: var(--ink);
+}
+
+/* ─── Cards ───────────────────────────────────────────── */
+.card {
+    border: 1px solid var(--line) !important;
+    border-radius: var(--radius) !important;
+    background: var(--surface);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    padding: 0;
+    transition: box-shadow 0.25s;
+}
+
+.card:hover {
+    box-shadow: 0 6px 28px rgba(0,0,0,0.08);
+}
+
+.card-body {
+    padding: 2rem 2.2rem;
+}
+
+/* ─── Section Labels ──────────────────────────────────── */
+.section-label {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 1.1rem;
+}
+
+/* ─── About text ──────────────────────────────────────── */
+.about-text {
+    font-size: 1.08rem;
+    color: var(--mid);
+    line-height: 1.85;
+    max-width: 62ch;
+    margin: 0;
+}
+
+/* ─── Tables ──────────────────────────────────────────── */
+.table {
+    margin-bottom: 0;
+}
+
+.table thead tr {
+    border-bottom: 1px solid var(--line);
+}
+
+.table thead th {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    background: transparent;
+    border: none;
+    padding: 0.6rem 0.75rem;
+}
+
+.table tbody td {
+    color: var(--ink);
+    border-top: 1px solid var(--line);
+    border-bottom: none;
+    padding: 0.9rem 0.75rem;
+    font-size: 0.93rem;
+    vertical-align: middle;
+}
+
+.table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.table-primary,
+.table-success,
+.table-dark {
+    background: transparent !important;
+    color: inherit !important;
+}
+
+/* ─── Buttons ─────────────────────────────────────────── */
+.btn-primary {
+    background: var(--ink);
+    border: none;
+    border-radius: 8px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.65rem 2rem;
+    transition: background 0.2s, transform 0.15s;
+}
+
+.btn-primary:hover {
+    background: #333;
+    transform: translateY(-1px);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+/* ─── Form Inputs ─────────────────────────────────────── */
+.form-control {
+    border-radius: 8px;
+    border: 1px solid var(--line);
+    background: var(--bg);
+    font-size: 0.92rem;
+    color: var(--ink);
+    padding: 0.65rem 1rem;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.form-control::placeholder {
+    color: var(--muted);
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: var(--ink);
+    background: var(--surface);
+    outline: none;
+}
+
+/* ─── Footer ──────────────────────────────────────────── */
+.footer-area {
+    background: transparent;
+    color: var(--muted);
+    border-top: 1px solid var(--line);
+    padding: 2rem 1rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.04em;
+}
+
+.footer-area p {
+    margin: 0;
+}
+
+/* ─── Spacing helpers ─────────────────────────────────── */
+.mb-4 { margin-bottom: 1.4rem !important; }
+.my-5 { margin-top: 2.5rem !important; margin-bottom: 2.5rem !important; }
