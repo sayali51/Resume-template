@@ -26,3 +26,15 @@ A clean, modern, and responsive **personal portfolio website** built using **HTM
 ---
 
 ## 📂 Project Structure
+Portfolio-Website/
+│── index.html # Main webpage
+│── style.css # Styling file
+└── README.md # Documentation
+
+---
+
+## 🚀 How to Run the Project
+
+1. Clone the repository:
+```bash
+git clone https://github.com/your-username/portfolio-website.git
