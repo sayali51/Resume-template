@@ -76,8 +76,9 @@ No build tools or dependencies needed. Just open the file in a browser:
 ## 👩‍💻 Author
 
 **Sayali Kale**  
-B.E. Computer Science, AISSMS College of Engineering  
-Web Technology Assignment — 2026
+B.E. Computer Science 
+Web Technology 
+Connect with me on LinkedIn: www.linkedin.com/in/sayali-kale-42001a2b1
 
 ---
 
